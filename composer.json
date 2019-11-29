@@ -1,0 +1,16 @@
+{
+  "name": "cinchms/cinchms",
+  "description": "Simple,clear and extensible CMS engine. Easy to integrate with an existing site built upon php-html-css-js. What a cinch!",
+  "minimum-stability": "stable",
+  "license": "BSD-2-Clause",
+  "authors": [
+    {
+      "name": "Hex3l"
+    }
+  ],
+  "require": {
+    "php": ">=5.3",
+    "klein/klein": "^2.1",
+    "j4mie/idiorm": "^1.5"
+  }
+}
