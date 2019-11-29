@@ -1,6 +1,6 @@
 CinchMS
 ======
-**Simple CMS engine built for developer end-users**, easy to integrate with an existing site built on html-css-js
+**Simple, clear and extensible CMS engine built for developer end-users**. Easy to integrate with an existing site built on html-css-js. It is a cinch!
 
 Project idea
 -----
