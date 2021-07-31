@@ -1,12 +1,12 @@
 CinchMS
 ======
-**Simple, clear and extensible CMS engine built for developer end-users**. Easy to integrate with an existing site built on html-css-js. It is a cinch!
+**Simple blog engine built for developer end-users**, easy to integrate with an existing site built on html-css-js
 
 Project idea
 -----
-I have been looking for a CMS _(content manage system)_ that simplified the management process, 
-but I haven’t found anything similar... That is why **I decided to create my own CMS _built for 
-developer end-users_**, giving them a real free hand over a simple and clean system without useless functions.
+I have been looking for a blog CMS _(content manage system)_ that simplified 
+only the management process, but I haven’t found anything similar. That's why **I decided to create my own CMS _built for 
+developer end-users_**, giving 'em a real free hand over a simple and clean system without useless functions.
 
 Dependecies
 -----
@@ -19,7 +19,7 @@ This project requires third-party dependencies managed by Composer, a Dependency
  -  **Idiorm:** a lightweight nearly-zero-configuration object-relational mapper and fluent query builder for PHP5. 
  ([GitHub](https://github.com/j4mie/idiorm)) (BSD license)
  
-FastBlog also uses some cool JavaScript dependencies through theirs CDN _(Content Delivery Network)_.
+CinchMS also uses some cool JavaScript dependencies through theirs CDN _(Content Delivery Network)_.
  - **Font Awesome:** The internet's most popular icon toolkit
  ([GitHub](https://github.com/FortAwesome/Font-Awesome))
  - **QuillJs:** QuillJS is a modern rich text editor built for compatibility and extensibility
