@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link rel='stylesheet' type="text/css" href='/resources/fb-style.css'></link>
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    </head>
+    <body>
+        If you can't access this page you can manually edit the configuration located in '(cinchms directory)/src/core/configuration/config.json' <br>
+        <form action="/setup/installation" method="post">
+            <div class="title">MySql</div> <br>
+            <label for="mysql-hostname">Hostname: </label><input type="text" name="mysql-hostname" id="mysql-hostname"> <br>
+            <label for="mysql-port">Port: </label><input type="text" name="mysql-port" id="mysql-port"> <br>
+            <label for="mysql-username">Username: </label><input type="text" name="mysql-username" id="mysql-username"> <br>
+            <label for="mysql-password">Password: </label><input type="password" name="mysql-password" id="mysql-password"> <br>
+            <label for="mysql-database">Database: </label><input type="text" name="mysql-database" id="mysql-database"> <br><br>
+
+            <div class="section">Administrator account</div> <br>
+            <label for="admin-username">Username: </label><input type="text" name="admin-username" id="admin-username"> <br>
+            <label for="admin-password">Password: </label><input type="password" name="admin-password" id="admin-password"> <br>
+            <label for="admin-email">Email: </label><input type="email" name="admin-email" id="admin-email"> <br><br>
+
+            <div class="title">Subdirectory Installation</div> <br>
+            <div class="subtitle">Installing in a subdirectory?</div> <br>
+            <input type="radio" name="subdir-installation" value="yes" id="subdir-installation-yes"> <label for="subdir-installation-yes">Yes</label><br>
+            <div class="reveal-if-active">
+                <br>
+                <label for="subdir-name">Which is the subdirectory path?</label>
+                <input type="text" id="subdir-name" name="subdir-name" class="require-if-active" data-require-pair="#subdir-installation-yes"> <br>
+                E.g. <br>
+                www.example.com/cinchms (the subdirectory path is 'cinchms')<br>
+                www.example.com/something/cinchms (the subdirectory path is 'something/cinchms') <br><br>
+            </div>
+            <input type="radio" name="subdir-installation" value="no" id="subdir-installation-no" checked> <label for="subdir-installation-no">No</label><br><br><br>
+
+            <div class="section">Administration Control Panel subdirectory</div> <br>
+            <label for="admin-subdirectory">Subdirectory: </label><input type="text" name="admin-username" id="admin-subdirectory" value="admin"> <br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script>
+            var FormStuff = {
+
+                init: function() {
+                    this.applyConditionalRequired();
+                    this.bindUIActions();
+                },
+
+                bindUIActions: function() {
+                    $("input[type='radio'], input[type='checkbox']").on("change", this.applyConditionalRequired);
+                },
+
+                applyConditionalRequired: function() {
+                    $(".require-if-active").each(function() {
+                        var el = $(this);
+                        if ($(el.data("require-pair")).is(":checked")) {
+                            el.prop("required", true);
+                        } else {
+                            el.prop("required", false);
+                        }
+                    });
+                }
+            };
+            FormStuff.init();
+        </script>
+    </body>
+</html>

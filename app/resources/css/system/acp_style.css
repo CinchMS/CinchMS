@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    margin:0;
+    background-color:#333;
+}
+
+/******************/
+/*  CinchMS title */
+/******************/
+
+.cinchms {
+    width:200px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    font-size:30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/***************************/
+/* Right content container */
+/***************************/
+
+.right-content {
+    display:block;
+    position: fixed;
+    margin: 50px 0 0 200px;
+    width:calc(100% - 200px);
+    height: calc(100% - 50px);
+    overflow:auto;
+}
+
+/*******************/
+/* Horizontal menu */
+/*******************/
+
+.horizontal-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width:100%;
+    position:fixed;
+    overflow: hidden;
+    background-color: #121212;
+    z-index: 2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.horizontal-menu li {
+    float: left;
+    height: 50px;
+}
+
+.horizontal-menu li a {
+    display: block;
+    color: #929292;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.horizontal-menu li a:hover:not(.active) {
+    background-color: #333;
+    color: white;
+}
+
+.horizontal-menu .active {
+    background-color: #333;
+    color: white;
+}
+
+/*************/
+/* Left menu */
+/*************/
+
+.left-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    width: 200px;
+    background-color: #121212;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    font-family: 'Open Sans', sans-serif;
+    z-index: 1;
+}
+
+.left-menu li {
+    text-align: center;
+}
+
+.left-menu li a {
+    display: block;
+    color: #929292;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.left-menu li a:hover {
+    background-color: #333;
+    color: white;
+}
+
+.left-menu .active {
+    background-color: #333;
+    color: white;
+}
+
+/**********************/
+/* Generic center box */
+/**********************/
+
+.center-box {
+    position:fixed;
+    display:block;
+    margin:auto;
+    left: 0;
+    right: 0;
+    top:20%;
+    width: 480px;
+    border: solid 2px #929292;
+    background-color:#121212;
+    border-radius: 25px;
+    padding: 10px;
+    color: #929292;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.center-box a {
+    text-decoration: none;
+    color: #929292;
+}
+
+.center-box a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.center-box .title {
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 30px;
+    padding: 20px 0 15px 0;
+}
+
+/**********************/
+/* Login form (Login) */
+/**********************/
+
+.login form {
+    display:block;
+    width:100%;
+    margin-top:15px;
+    text-align: center;
+}
+
+.login form input {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    padding: 3px;
+    border: 0;
+    border-radius: 3px;
+}
+
+.login form button {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    padding: 5px;
+    border: 0;
+    border-radius: 3px;
+    background-color: #929292;
+    font-weight:bold;
+}
+
+.login form button:hover {
+    background-color: #fff;
+}
+
+.login form .alert {
+    margin-left:15px;
+    margin-right:15px;
+    left: 0;
+    right: 0;
+    background-color:#b30000;
+    border-radius: 25px;
+    padding: 5px;
+    color: #121212;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/***************************/
+/* Article form (New/Edit) */
+/***************************/
+
+.article form input {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    padding: 3px;
+    border: solid 2px;
+    border-color: #929292;
+    margin-bottom: 10px;
+    color: #fff;
+    background-color:#121212;
+}
+
+.article form::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #929292;
+    opacity: 1; /* Firefox */
+}
+
+.article form:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #929292;
+}
+
+.article form:-ms-input-placeholder { /* Microsoft Edge */
+    color: #929292;
+}
+
+.article form input .less{
+    max-width: 300px;
+}
+
+.article form .center {
+    display: block;
+    width:200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.article form .ql-toolbar {
+    background-color: #fff;
+}
+
+.article form #article-editor {
+    margin-bottom: 10px;
+    max-height: 400px;
+    color: #fff;
+    background-color: #121212;
+    border: solid 2px;
+    border-color: #929292;
+}
+
+.article form #social-editor {
+    max-height: 188.5px;
+    color: #fff;
+    background-color: #121212;
+    border: solid 2px;
+    border-color: #929292;
+}
+
+.article form #social-editor pre {
+    margin: 0;
+    max-height:177px;
+}
+
+/*****************/
+/* Common button */
+/*****************/
+
+.button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    line-height: 25px;
+    border: solid 3px #929292;
+    background-color: #121212;
+    color: #929292;
+    padding: 10px;
+    margin: 0 5px 15px 5px;
+    -webkit-box-shadow: 0 0 43px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 0 43px 4px rgba(0,0,0,0.75);
+    box-shadow: 0 0 43px 4px rgba(0,0,0,0.75);
+}
+
+.button:hover {
+    background-color: #121212;
+    border-color: #fff;
+    color: #fff;
+}
+
+/**********************/
+/* Generic containers */
+/**********************/
+
+.content {
+    width: 90%;
+    display: block;
+    padding: 10px;
+    margin:auto;
+}
+
+.width100{
+    width: 100%;
+}
+
+/***********************/
+/* Main text container */
+/***********************/
+
+.cont-96 {
+    width: calc(96% - 20px);
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    left:0;
+    padding:10px;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+}
+.cont-96 .right {
+    float: left;
+    width: 48%;
+    margin-left: 2%;
+}
+
+.cont-96 .left {
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+}
+
+.cont-96 .header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    line-height: 25px;
+    border: solid 3px;
+    background-color: #121212;
+    border-color: #929292;
+    color: #fff;
+    padding:10px;
+    -webkit-box-shadow: 0 0 43px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 0 43px 4px rgba(0,0,0,0.75);
+    box-shadow: 0 0 43px 4px rgba(0,0,0,0.75);
+}
+
+.cont-96 .cont-content {
+    background-color: #121212;
+    padding:15px;
+    color: #929292;
+}
+
+/*****************/
+/* Generic table */
+/*****************/
+
+table {
+    width: calc(96% - 20px);
+    font-family: 'Open Sans', sans-serif;
+    border-collapse: collapse;
+    margin: 25px auto;
+    padding: 10px;
+}
+
+table td {
+    border: 3px solid #333;
+    text-align: left;
+    padding: 8px;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+table td .half {
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+
+table th {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    border: solid 3px #929292;
+    background-color: #121212;
+    color: #fff;
+    padding:10px;
+    -webkit-box-shadow: 0 0 43px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 0 43px 4px rgba(0,0,0,0.75);
+    box-shadow: 0 0 43px 4px rgba(0,0,0,0.75);
+    text-align: left;
+}
+
+table a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+table a:hover {
+    color: #929292;
+}
+
+/**********************/
+/* Main popup content */
+/**********************/
+
+body .popup {
+    z-index:10;
+    background-color: rgba(51, 51, 51, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+body .popup .content {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgba(51, 51, 51, 0.6);
+    color: #ffffff;
+    height: 20%;
+    width: 100%;
+    top:0;
+    left:0;
+    padding-left: 30%;
+    padding-right:30%;
+    margin-top: 40%;
+}
+
+/* Utility */
+
+.full-width {
+    width: 100%;
+}
+
+.no-border {
+    border: 0;
+    border-radius: 0;
+}
